@@ -19,7 +19,7 @@ h1{
     padding-top: 5vw;
     text-align: center;
     padding-bottom: 1vw;
-    z-index: 1;
+  
 }
 button{
     width: 70%;
@@ -53,6 +53,7 @@ input[type=text], input[type=password] {
     border: 0 solid #ccc;
     box-sizing: border-box;
     margin-bottom: 2vw;
+    font-size: 1vw;
   }
    .name{
       display: flex;
