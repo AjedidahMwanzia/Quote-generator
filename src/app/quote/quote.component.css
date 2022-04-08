@@ -10,14 +10,25 @@
 ul li{
     list-style: none;
     background-color: #2f7b91;
-    width: 60%;
-    padding: 2vw;
+    width: 70%;
+    height: 13vw;
+    margin-top: 2vw;
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 3vw;
     color: white;
-    font-size: 1.5vw;
-    border-radius: 1vw;
-    /* font-weight: bold; */
+    font-size: 1.2vw;
+    border-radius: 1vw; 
+    overflow: wrap;
+    font-weight: bold;
 }
 span{
     background-color: #2f7b91;
-    margin-bottom: 2vw;
+   
+}
+ul li img{
+    width: 30%;
+    margin-top: -10vw;
+    margin-left: -25vw;
 }
