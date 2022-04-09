@@ -11,7 +11,7 @@
             </ng-template>
             <ng-template #empty>
                 <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
-                <li>{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} . {{quote.completeDate|dateCount|date}} </span></li>
+                <li>{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} . {{quote.completeDate|date}} </span></li>
                 <i class="fa-solid fa-quote-right  fa-2x" style="background-color: #2f7b91;"></i>
             </ng-template>
            <app-quote-detail *ngIf='quote.details' [quote]='quote'(isComplete) = 'deleteQuote($event,i)' ></app-quote-detail>
@@ -22,5 +22,6 @@
     </div>
     <div class="column2">
  <h2>Form</h2>
+ <app-quote-form></app-quote-form>
     </div>
 </div>
