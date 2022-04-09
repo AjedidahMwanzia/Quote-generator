@@ -1,8 +1,9 @@
 <h1>Quote Generator</h1>
 <div class="row">
     <div class="column1">
+      
         <ul *ngFor = 'let quote of quotes let i = index'>
-          
+            
                 <div *ngIf='quote.upvote == highest && quote.upvote>0; then highlight else empty'></div>
             <ng-template #highlight>
                 <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
@@ -11,7 +12,8 @@
             </ng-template>
             <ng-template #empty>
                 <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
-                <li>{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} . {{quote.completeDate|date}} </span></li>
+                <li>{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} </span></li>
+                <li>{{quote.completeDate|date}}&nbsp; &nbsp;Posted: {{quote.completeDate|datePipe}} days ago</li>  
                 <i class="fa-solid fa-quote-right  fa-2x" style="background-color: #2f7b91;"></i>
             </ng-template>
            <app-quote-detail *ngIf='quote.details' [quote]='quote'(isComplete) = 'deleteQuote($event,i)' ></app-quote-detail>

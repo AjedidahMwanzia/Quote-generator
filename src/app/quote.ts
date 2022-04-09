@@ -4,8 +4,8 @@ export class Quote {
         this.id =id;
         this.quote = quote
         this.details = details
-        this.upvote = 0;
-        this.downvote = 0;
+        this.upvote = upvote;
+        this.downvote = upvote;
         this.completeDate= completeDate;
       
     }
