@@ -1,7 +1,7 @@
 # QuoteGenerator
 
 ##### By Ajedidah Mwanzia 
-
+<img src="https://github.com/AjedidahMwanzia/quote-generator/blob/master/src/assets/screenshot.png">
 ## Table of Content
 
 + [Description](#description)
