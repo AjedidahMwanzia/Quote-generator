@@ -3,19 +3,16 @@
     <div class="column1">
       
         <ul *ngFor = 'let quote of quotes let i = index'>
-            
-                <div *ngIf='quote.upvote == highest && quote.upvote>0; then highlight else empty'></div>
-            <ng-template #highlight>
-                <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
-                <li appHighlight>{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} <br>  </span></li>
-                <i class="fa-solid fa-quote-right  fa-2x" style="background-color: #2f7b91;"></i>
-            </ng-template>
-            <ng-template #empty>
-                <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
-                <li>{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} </span></li>
-                <li>{{quote.completeDate|date}}&nbsp; &nbsp;Posted: {{quote.completeDate|datePipe}} days ago</li>  
-                <i class="fa-solid fa-quote-right  fa-2x" style="background-color: #2f7b91;"></i>
-            </ng-template>
+            <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
+            <li appHighlight *ngIf="highest()===quote.upvote && quote.upvote>0">
+                 {{quote.quote}} <span style="float: right;">{{quote.details}} </span>
+            </li>
+            <li  *ngIf="highest()!==quote.upvote || quote.upvote===0">
+                 {{quote.quote}}<span style="float: right;">{{quote.details}} </span>
+            </li>
+            <li id="list">{{quote.completeDate|date}} Posted: {{quote.completeDate|dateAgo}}</li>  
+             <i class="fa-solid fa-quote-right  fa-2x" style="background-color: #2f7b91;"></i>
+               
            <app-quote-detail *ngIf='quote.details' [quote]='quote'(isComplete) = 'deleteQuote($event,i)' ></app-quote-detail>
           </ul>
     </div>

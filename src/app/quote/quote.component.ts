@@ -15,9 +15,21 @@ quotes:Quote[]=[
 
 ]
 
- 
- arr:number[]= this.quotes.map(quote=>quote.upvote)
- highest:number= Math.max(...this.arr)
+  first!: number;
+  last!:number
+  count!:number 
+
+ highest(){
+  this.first = 0
+  this.last = 0
+
+  for(this.count=0 ; this.count < this.quotes.length; this.count++) {
+    this.last = this.quotes[this.count].upvote;
+    if(this.last > this.first){this.first = this.last}
+  }
+  return  this.first
+}
+
 
  deleteQuote(isComplete: any, index: number){
   if (isComplete) {
