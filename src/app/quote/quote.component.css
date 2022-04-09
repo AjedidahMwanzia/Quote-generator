@@ -57,6 +57,10 @@ ul .fa-quote-right{
     margin-right: -20vw;
     margin-top: 1vw;
 }
+ul > #list{
+    padding-top: 1vw;
+   
+}
 
 
 
