@@ -2,11 +2,11 @@
 <div class="row">
     <div class="column1">
         <ul *ngFor = 'let quote of quotes'>
-            <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;"></i>
-            <li >{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} <br> <br> </span></li>
-            <!-- <li><i class="fa-solid fa-thumbs-up fa-2x" style="background-color: #2f7b91;"> <br>{{quote.upvote}}</i></li>
-             <li>><i class="fa-solid fa-thumbs-down fa-2x"style="background-color: #2f7b91;"> <br>{{quote.upvote}}</i></li>
-            <i class="fa-solid fa-quote-right fa-2x"style="padding-top;background-color: #2f7b91; "></i> -->
+            <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
+            <li >{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} <br>  </span></li>
+            <i class="fa-solid fa-quote-right  fa-2x" style="background-color: #2f7b91;"></i>
+           <app-quote-detail  [quote]='quote'></app-quote-detail>
+           
      </ul>
     </div>
     <div class="column2">

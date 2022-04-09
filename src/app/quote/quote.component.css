@@ -15,7 +15,7 @@ ul {
     list-style: none;
     background-color: #2f7b91;
     width: 70%;
-    height: 13vw;
+    height: 17vw;
     margin-top: 2vw;
     text-align: center;
     padding-left: 2vw;
@@ -33,6 +33,16 @@ span{
 }
 ul li{
     background-color: #2f7b91;
+    margin-bottom: 2vw;
 }
+ul .fa-quote-left {
+    margin-left: -26vw;
+    margin-bottom: 1vw;
+}
+ul .fa-quote-right{
+    margin-right: -26vw;
+    margin-top: 1vw;
+}
+
 
 
