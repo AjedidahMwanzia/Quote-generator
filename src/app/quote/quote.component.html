@@ -3,7 +3,7 @@
     <div class="column1">
         <ul *ngFor = 'let quote of quotes let i = index'>
           
-                <div *ngIf='quote.upvote ==highest && quote.upvote>0; then highlight else empty'></div>
+                <div *ngIf='quote.upvote == highest && quote.upvote>0; then highlight else empty'></div>
             <ng-template #highlight>
                 <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
                 <li appHighlight>{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} <br>  </span></li>

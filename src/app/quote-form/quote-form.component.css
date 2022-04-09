@@ -5,11 +5,9 @@ h4{
 .form-group input{
  width: 70%;
  padding: 0.5vw;
- background-color: white;
- outline: #2f7b91;
+ outline: none;
  border-radius: 0.5vw;
- border-bottom:#2f7b91; 
- border-top:#2f7b91;
+
 }
 .form-group label{
     font-weight: 500;
@@ -17,10 +15,9 @@ h4{
 }
 textarea{
  width: 75%;
- background-color: white;
- outline: #2f7b91;
- border-bottom:#2f7b91;
- border-top:#2f7b91;
+ background-color:transparent;
+ outline: white;
+
  border-radius: 0.5vw;
 
 }

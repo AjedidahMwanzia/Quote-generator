@@ -7,7 +7,6 @@ import { Quote } from '../../quote';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
-  [x: string]: any;
   @Input() 
   quote!: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
@@ -15,12 +14,11 @@ export class QuoteDetailComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
- 
-  upvote(i: string | number) {
-    this['Quote'][i].upvotes ++;
+  upvote(){
+    this.quote.upvote+=1;
   }
-  downvote(i: string | number) {
-    this['Quote'][i].downvotes  ++;
+  downvote(){
+    this.quote.downvote+=1;
   }
 
   constructor() { }
