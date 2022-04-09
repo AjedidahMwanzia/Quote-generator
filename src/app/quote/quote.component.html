@@ -1,14 +1,15 @@
 <h1>Quote Generator</h1>
 <div class="row">
-    <div class="column">
+    <div class="column1">
         <ul *ngFor = 'let quote of quotes'>
-
-            <li >{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} <br> </span></li>
-     <!-- <li style="text-align: right;"></li> -->
-           
-        </ul>
+            <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;"></i>
+            <li >{{quote.quote}} <br> <br> <span style="float: right;">{{quote.details}} <br> <br> </span></li>
+            <!-- <li><i class="fa-solid fa-thumbs-up fa-2x" style="background-color: #2f7b91;"> <br>{{quote.upvote}}</i></li>
+             <li>><i class="fa-solid fa-thumbs-down fa-2x"style="background-color: #2f7b91;"> <br>{{quote.upvote}}</i></li>
+            <i class="fa-solid fa-quote-right fa-2x"style="padding-top;background-color: #2f7b91; "></i> -->
+     </ul>
     </div>
-    <div class="column">
+    <div class="column2">
  <h2>form</h2>
     </div>
 </div>
