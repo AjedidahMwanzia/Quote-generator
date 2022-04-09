@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 *{
     background-color: #ececf0;
+    
+}
+body {
+    padding: 5%;
+    margin-top: 3vw;
+    margin-left: 10vw;
+    width: 70%;
+    border: 0.35vw solid #c4c4c4;
+    position: relative;
 }

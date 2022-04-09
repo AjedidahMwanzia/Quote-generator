@@ -2,7 +2,15 @@
     background-color: transparent;
     display: flex;
     justify-content: space-around;
+    
 }
 .vote p{
     background-color:transparent; 
+    margin-bottom: 2vw;
+}
+.fa-solid{
+    padding-bottom: 2vw; 
+}
+.fa-trash{
+    background-color:transparent;   
 }
