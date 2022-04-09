@@ -1,5 +1,19 @@
 # QuoteGenerator
 
+##### By Ajedidah Mwanzia 
+
+## Table of Content
+
++ [Description](#description)
++ [Installation Requirement](#Installation)
++ [Technology Used](#technology-used)
++ [Reference](#reference)
++ [License](#license)
++ [Authors Info](#author-Info)
+
+## Description
+A web application made using AngularJs where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
@@ -25,3 +39,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Licence
+MIT License:
+Copyright (c) 2022 Ajedidah Mwanzia
+
+## Authors Info
+
+-   Email- [Ajedidah Mwanzia](mailto:ajedidah.mwanzia@student.moringaschool.com)
+-   Linkedin - [Ajedidah Mwanzia](https://www.linkedin.com/in/ajedidah-mwanzia/)
+-   Portfolio - [Ajedidah Mwanzia](https://ajedidahmwanzia.github.io/portfolio/)
+
+
+[Go Back to the top](#Quote-generator)
