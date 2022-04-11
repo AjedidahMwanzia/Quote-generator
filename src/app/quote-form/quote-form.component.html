@@ -1,7 +1,7 @@
 <div class="container">
     <h4 class="text-center">Create a new Quote</h4>
     <hr >
-    <form (ngSubmit)='submitGoal()'#goalForm='ngForm'>
+    <form (ngSubmit)='submitGoal()'#quoteForm='ngForm'>
         <div class="form-group">
   
             <label for="text">Quote</label> <br>
@@ -29,6 +29,9 @@
               </div>
   
         </div>
-        <button type="submit" class="btn btn-success">Add Quote</button>
+        <button [disabled]="!quoteForm.valid"type="submit" class="btn btn-success">Add Quote</button>
+        <p class="form-error" *ngIf="!quoteForm.valid" style="color: #2f7b91 ;">
+            Please fill all the fields 
+          </p>
     </form>
   </div>
