@@ -48,7 +48,10 @@ addNewQuote(quote: Quote){
   this.quotes.push(quote)
 }
 
- 
+getCurrentYear() {
+  let timeline = new Date();
+  return timeline.getFullYear();
+}
 
 constructor() { }
 

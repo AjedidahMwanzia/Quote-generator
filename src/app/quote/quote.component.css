@@ -61,6 +61,29 @@ ul > #list{
     padding-top: 1vw;
    
 }
+.footer p {
+    color:#2f7b91;
+    font-weight: 500;
+    font-size: 1vw;
+    letter-spacing: 0.02vw;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  
+.column1,
+.colum2 {
+  width: 50%;
+  height: 100vh;
+  overflow: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.column1::-webkit-scrollbar
+.column2::-webkit-scrollbar {
+    display: show;
+}
 
 
 
